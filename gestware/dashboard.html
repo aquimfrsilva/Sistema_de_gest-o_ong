@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - GestWare</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo-gestware-white.svg" alt="GestWare Logo">
+                    <span>GestWare</span>
+                </a>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Geral</h3>
+                    <ul>
+                        <li class="active">
+                            <a href="dashboard.html">
+                                <i class="fas fa-home"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Relatórios</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Calendário</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Gestão</h3>
+                    <ul>
+                        <li>
+                            <a href="ongs/listar.html">
+                                <i class="fas fa-building"></i>
+                                <span>ONGs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="voluntarios/listar.html">
+                                <i class="fas fa-users"></i>
+                                <span>Voluntários</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categorias/listar.html">
+                                <i class="fas fa-tags"></i>
+                                <span>Categorias</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <span>Doações</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>Projetos</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Configurações</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-cog"></i>
+                                <span>Configurações</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user-cog"></i>
+                                <span>Minha Conta</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Ajuda</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="img/user-avatar.jpg" alt="Usuário">
+                    <div class="user-info">
+                        <h4>Joaquim Felipe</h4>
+                        <span>Administrador</span>
+                    </div>
+                </div>
+                <a href="login.html" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Topbar -->
+            <header class="topbar">
+                <div class="topbar-left">
+                    <button class="sidebar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1 class="page-title">Dashboard</h1>
+                </div>
+                
+                <div class="topbar-right">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Pesquisar...">
+                        <button type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="topbar-actions">
+                        <button class="notification-btn" aria-label="Notificações">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-badge">3</span>
+                        </button>
+                        
+                        <button class="theme-toggle" aria-label="Alternar tema">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>124</h3>
+                            <span>Voluntários</span>
+                        </div>
+                        <div class="stat-trend up">
+                            <i class="fas fa-arrow-up"></i> 12%
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>R$ 42.580</h3>
+                            <span>Doações</span>
+                        </div>
+                        <div class="stat-trend up">
+                            <i class="fas fa-arrow-up"></i> 8%
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>18</h3>
+                            <span>Projetos Ativos</span>
+                        </div>
+                        <div class="stat-trend down">
+                            <i class="fas fa-arrow-down"></i> 3%
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>7</h3>
+                            <span>Eventos esta semana</span>
+                        </div>
+                        <div class="stat-trend up">
+                            <i class="fas fa-arrow-up"></i> 25%
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Charts Row -->
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Atividades Recentes</h3>
+                                <select class="form-select">
+                                    <option>Últimos 7 dias</option>
+                                    <option>Últimos 30 dias</option>
+                                    <option>Últimos 90 dias</option>
+                                </select>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-container">
+                                    <canvas id="activityChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Distribuição de Voluntários</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-container">
+                                    <canvas id="volunteersChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Activities -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Últimas Doações</h3>
+                                <a href="#" class="btn btn-sm btn-outline">Ver todas</a>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Doador</th>
+                                                <th>Valor</th>
+                                                <th>Data</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Maria Silva</td>
+                                                <td>R$ 1.200,00</td>
+                                                <td>10/06/2023</td>
+                                                <td><span class="badge success">Confirmado</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Carlos Mendes</td>
+                                                <td>R$ 500,00</td>
+                                                <td>09/06/2023</td>
+                                                <td><span class="badge success">Confirmado</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Instituto Verde</td>
+                                                <td>R$ 3.000,00</td>
+                                                <td>08/06/2023</td>
+                                                <td><span class="badge warning">Processando</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ana Paula</td>
+                                                <td>R$ 250,00</td>
+                                                <td>07/06/2023</td>
+                                                <td><span class="badge success">Confirmado</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>João Pedro</td>
+                                                <td>R$ 750,00</td>
+                                                <td>05/06/2023</td>
+                                                <td><span class="badge error">Cancelado</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Novos Voluntários</h3>
+                                <a href="voluntarios/cadastrar.html" class="btn btn-sm btn-primary">Adicionar</a>
+                            </div>
+                            <div class="card-body">
+                                <div class="volunteers-list">
+                                    <div class="volunteer-item">
+                                        <img src="img/volunteer-1.jpg" alt="Voluntário">
+                                        <div class="volunteer-info">
+                                            <h4>Fernanda Lima</h4>
+                                            <span>Educação</span>
+                                        </div>
+                                        <span class="volunteer-date">Hoje</span>
+                                    </div>
+                                    
+                                    <div class="volunteer-item">
+                                        <img src="img/volunteer-2.jpg" alt="Voluntário">
+                                        <div class="volunteer-info">
+                                            <h4>Ricardo Alves</h4>
+                                            <span>Logística</span>
+                                        </div>
+                                        <span class="volunteer-date">Ontem</span>
+                                    </div>
+                                    
+                                    <div class="volunteer-item">
+                                        <img src="img/volunteer-3.jpg" alt="Voluntário">
+                                        <div class="volunteer-info">
+                                            <h4>Patrícia Souza</h4>
+                                            <span>Arrecadação</span>
+                                        </div>
+                                        <span class="volunteer-date">Ontem</span>
+                                    </div>
+                                    
+                                    <div class="volunteer-item">
+                                        <img src="img/volunteer-4.jpg" alt="Voluntário">
+                                        <div class="volunteer-info">
+                                            <h4>Marcos Oliveira</h4>
+                                            <span>TI</span>
+                                        </div>
+                                        <span class="volunteer-date">05/06/2023</span>
+                                    </div>
+                                    
+                                    <div class="volunteer-item">
+                                        <img src="img/volunteer-5.jpg" alt="Voluntário">
+                                        <div class="volunteer-info">
+                                            <h4>Juliana Costa</h4>
+                                            <span>Comunicação</span>
+                                        </div>
+                                        <span class="volunteer-date">03/06/2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

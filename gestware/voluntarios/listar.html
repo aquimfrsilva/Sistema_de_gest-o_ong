@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voluntários - GestWare</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/voluntarios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../../index.html" class="logo">
+                <img src="../../assets/logo-gestware.svg" alt="GestWare Logo">
+                <span>GestWare</span>
+            </a>
+            
+            <button class="mobile-menu-button" aria-label="Abrir menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="../ongs/listar.html">ONGs</a></li>
+                <li class="active"><a href="listar.html">Voluntários</a></li>
+                <li><a href="../categorias/listar.html">Categorias</a></li>
+                <li><a href="../../login.html" class="btn btn-outline">Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Voluntários</h1>
+                <a href="cadastrar.html" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Novo Voluntário
+                </a>
+            </div>
+            
+            <div class="filters-bar">
+                <div class="search-box">
+                    <input type="text" placeholder="Pesquisar voluntários...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="filter-options">
+                    <select class="form-select">
+                        <option>Todos os status</option>
+                        <option>Ativo</option>
+                        <option>Inativo</option>
+                        <option>Pendente</option>
+                    </select>
+                    
+                    <select class="form-select">
+                        <option>Todas as categorias</option>
+                        <option>Educação</option>
+                        <option>Saúde</option>
+                        <option>Meio Ambiente</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="table-responsive">
+                <table class="volunteers-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Telefone</th>
+                            <th>Categoria</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Linhas serão preenchidas via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="pagination">
+                <button class="btn btn-outline" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="btn btn-primary">1</button>
+                <button class="btn btn-outline">2</button>
+                <button class="btn btn-outline">3</button>
+                <button class="btn btn-outline">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>GestWare</h3>
+                    <p>Soluções completas para gestão de organizações não governamentais.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="../../index.html">Início</a></li>
+                        <li><a href="../ongs/listar.html">ONGs</a></li>
+                        <li><a href="listar.html">Voluntários</a></li>
+                        <li><a href="../categorias/listar.html">Categorias</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contato@gestware.com.br</li>
+                        <li><i class="fas fa-phone"></i> (11) 98765-4321</li>
+                        <li><i class="fas fa-map-marker-alt"></i> São Paulo - SP</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 GestWare. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/voluntarios.js"></script>
+</body>
+</html>

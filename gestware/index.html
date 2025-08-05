@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GestWare - Gestão para ONGs</title>
+    <meta name="description" content="Sistema de gestão completo para organizações não governamentais">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo-gestware.svg" alt="GestWare Logo">
+                <span>GestWare</span>
+            </a>
+            
+            <button class="mobile-menu-button" aria-label="Abrir menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#features">Funcionalidades</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="login.html" class="btn btn-outline">Entrar</a></li>
+                <li><a href="cadastro.html" class="btn btn-primary">Cadastre-se</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Gestão simplificada para sua ONG</h1>
+                <p class="lead">O GestWare oferece todas as ferramentas necessárias para gerenciar sua organização de forma eficiente e transparente.</p>
+                <div class="hero-cta">
+                    <a href="cadastro.html" class="btn btn-primary btn-large">Experimente grátis</a>
+                    <a href="#features" class="btn btn-outline btn-large">Saiba mais</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/hero-ong.png" alt="Dashboard GestWare" loading="lazy">
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="section features">
+        <div class="section-container">
+            <h2 class="section-title">Funcionalidades</h2>
+            <p class="section-subtitle">Tudo o que sua ONG precisa em um só lugar</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Gestão de Voluntários</h3>
+                    <p>Cadastre, organize e acompanhe todos os voluntários da sua organização.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Controle de Doações</h3>
+                    <p>Registre e gerencie doações com relatórios detalhados e transparência.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Gerenciamento de Projetos</h3>
+                    <p>Planeje e acompanhe todos os projetos da sua ONG em tempo real.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Relatórios Personalizados</h3>
+                    <p>Gere relatórios completos para análise e tomada de decisão.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Gestão Financeira</h3>
+                    <p>Controle todas as entradas e saídas de recursos da organização.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Acesso Mobile</h3>
+                    <p>Acesse o sistema de qualquer dispositivo, a qualquer momento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="section-container">
+            <div class="about-content">
+                <h2 class="section-title">Sobre o GestWare</h2>
+                <p>O GestWare nasceu da necessidade de oferecer às organizações não governamentais uma ferramenta completa, acessível e fácil de usar para gerenciar todas as áreas da organização.</p>
+                <p>Nossa missão é democratizar o acesso à tecnologia de gestão para que ONGs de todos os portes possam se beneficiar de processos mais eficientes e transparentes.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">+150</span>
+                        <span class="stat-label">ONGs atendidas</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">+5.000</span>
+                        <span class="stat-label">Voluntários cadastrados</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Suporte disponível</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="img/about-ong.jpg" alt="Equipe de ONG trabalhando" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="section-container">
+            <h2 class="section-title">O que dizem sobre nós</h2>
+            <p class="section-subtitle">ONGs que confiam no GestWare</p>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"O GestWare revolucionou a forma como gerenciamos nossa ONG. Agora temos total controle sobre nossos projetos e recursos com muito menos trabalho."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img/testimonial-1.jpg" alt="Maria Silva">
+                        <div>
+                            <h4>Maria Silva</h4>
+                            <span>ONG Esperança Viva</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"A transparência que o GestWare proporciona aumentou significativamente a confiança dos nossos doadores. Recomendo para todas as ONGs!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img/testimonial-2.jpg" alt="Carlos Mendes">
+                        <div>
+                            <h4>Carlos Mendes</h4>
+                            <span>Instituto Verde Vida</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="section-container">
+            <h2>Pronto para transformar a gestão da sua ONG?</h2>
+            <p>Experimente gratuitamente por 30 dias. Sem necessidade de cartão de crédito.</p>
+            <a href="cadastro.html" class="btn btn-primary btn-large">Comece agora</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="section-container">
+            <h2 class="section-title">Fale conosco</h2>
+            <p class="section-subtitle">Tire suas dúvidas ou envie sugestões</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contato@gestware.com.br</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>(11) 98765-4321</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>São Paulo - SP, Brasil</span>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Assunto">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>GestWare</h3>
+                    <p>Soluções completas para gestão de organizações não governamentais.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Links rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="#features">Funcionalidades</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Assine nossa newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit" class="btn btn-outline">Assinar</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 GestWare. Todos os direitos reservados.</p>
+                <div class="footer-lang">
+                    <span>Português (Brasil)</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
